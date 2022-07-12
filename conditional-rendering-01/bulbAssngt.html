@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../styles/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <title>Vue JS</title>
+</head>
+<body>
+  <div id="thisbulb">
+    <div class="container justify-content-center d-flex">
+      <div class="row">
+
+          <div v-if="bulb.off">
+            <img style="max-height:500px;" src="../img/bulbOff.jpg" alt="">
+          </div>
+  
+          <div v-else>
+            <img style="max-width: 500px;" src="../img/bulbOn.jpg" alt="">
+          </div>
+
+          <ul style="list-style-type:none;">
+            <li>
+              <button class="btn btn-success" @click ="toggleOn" style="max-width:125px;">Switch On</button>
+              <button class="btn btn-danger" @click ="toggleOff" style="max-width:125px;">Switch Off</button>
+          </li>
+          </ul>
+      </div>
+    </div>
+  </div> 
+    
+    <script src="../../scripts/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="../../scripts/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
