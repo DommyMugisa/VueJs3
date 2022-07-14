@@ -18,14 +18,14 @@
             <!-- 7.Use the global router-link component to create navigable links -->
             <li class="nav-item">
               <router-link to="/">
-                <a class="nav-link active" aria-current="page">Home</a>
+                <a class="nav-link" aria-current="page">Home</a>
                 </router-link>
             </li>
             <li class="nav-item">
               <router-link to="/programs"><a class="nav-link">Programs</a></router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/courses"><a class="nav-link">Courses</a></router-link>
+              <router-link to="/courses"><a class="nav-link active">Courses</a></router-link>
             </li>
             <li class="nav-item">
               <router-link to="/alumni"><a class="nav-link">Alumni</a></router-link>

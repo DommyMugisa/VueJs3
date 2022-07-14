@@ -16,4 +16,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+a{
+  text-decoration: none !important;
+}
+</style>
